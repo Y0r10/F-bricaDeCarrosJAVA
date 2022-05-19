@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class Automovel {
+	String cor;
+	String modelo;
+	String marca;
+	static ArrayList<Automovel> Carros = new ArrayList<Automovel>();
+	
+	public Automovel criarCarro() {
+		Automovel car = new Automovel();
+		return car;
+	}
+	public Automovel construirCarro(Automovel car) {
+		car.cor=JOptionPane.showInputDialog("Qual a cor do carro: ");
+		car.modelo=JOptionPane.showInputDialog("Qual o modelo do carro: ");
+		car.marca=JOptionPane.showInputDialog("Qual a marca do carro: ");
+		return car;		
+	}
+	public void imprimir(ArrayList<Automovel>car) {
+		for(Automovel carro:car) {
+		System.out.println("A cor do carro é "+carro.cor);
+		System.out.println("O modelo do carro é "+carro.modelo);
+		System.out.println("A marca do carro é "+carro.marca);
+		System.out.println("***********************************");
+		}
+	}
+	public static void main(String[] args) {
+		Automovel objeto = new Automovel();
+		for (int i = 0; i < 3; i++) {
+			objeto=objeto.criarCarro();
+			objeto=objeto.construirCarro(objeto);
+			Carros.add(objeto);
+		}
+		objeto.imprimir(Carros);
+	}
+	
+
+}
