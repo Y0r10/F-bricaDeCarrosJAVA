@@ -1,0 +1,60 @@
+package aula2605;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+/*
+ *O cálculo do IMC avalia o índice de massa corporal
+ *que para homens tem como parâmetrps
+ *máximo;26
+ *nmínimo;19
+ *e para mulheres 
+ *máximo;24
+ *mínimo;16
+ */
+public class Atleta {
+	String nome;
+	float idade;
+	double peso, altura;
+	String tipo;
+	ArrayList<Atleta> lista = new ArrayList<Atleta>();
+	
+	public Atleta atribuirValores(Atleta novo) {
+		double p=0,a=0;
+		novo.nome=JOptionPane.showInputDialog("Informe o nome do atleta");
+		p=Double.parseDouble(JOptionPane.showInputDialog("Informe o peso do atleta"));
+		a=Double.parseDouble(JOptionPane.showInputDialog("Informe a altura do atleta"));
+		novo.tipo=JOptionPane.showInputDialog("h - Homem\nm - Mulher");
+		novo.peso=p;
+		novo.altura=a;
+		return novo;
+	}
+	public void calcularIMC(ArrayList<Atleta> lista) {
+		double max,min;
+		for(Atleta atleta:lista) {
+		double IMC= atleta.peso / (atleta.altura * atleta.altura); 
+		if(atleta.tipo.equals("h")){
+			max=26;
+			min=19;
+		}else {
+			max=24;
+			min=16;
+		}System.out.println("Dados do Atleta "+atleta.nome);
+		if(IMC>max) 
+			System.out.println("Acima do peso");
+		else if(IMC<min)
+			System.out.println("Abaixo do peso");
+		else
+			System.out.println("Peso Normal");
+		}
+	}
+	
+	public static void main (String x[]) {
+		for (int i = 0; i < 3; i++) {
+		Atleta novo = new Atleta();
+		novo.lista.add(novo.atribuirValores(novo));
+		}
+		calcularIMC(lista);
+	}
+}
