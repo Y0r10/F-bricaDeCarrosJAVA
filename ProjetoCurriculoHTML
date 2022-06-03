@@ -6,15 +6,27 @@
     </HEAD>    
     <BODY bgcolor="GREY">
             <p align="center"> 
-                <font size="7"> <b>CURRICULUM VITAE<BR>YURI KREUZBERG MARCELINO</b> </font>
-            </p>        
-                <p align="left">
-                <font color="black" face="Impact">
-                    <font size="6"><u>DADOS PESSOAIS:</u></font><BR>
-                        <font size="5"><i>NOME: Yuri Kreuzberg Marcelino<br>DATA DE NASCIMENTO:20/07/2006<br>ENDEREÇO:Rua Cacique, 478 Jardim Lancaster<br>CONTATOS:(45)99836-0548</i>    
-                            <br><br><br><font size="6"></font>
-                        </font>
+                <font size="7"> <b>CURRICULUM VITAE<br>YURI KREUZBERG MARCELINO</b> </font>
             </p>
-
+                <font color="black" face="impact">
+                    <font size="6"><p align="center"><u>DADOS PESSOAIS:</u></p></font>
+                        <font size="5">
+                            <p align="center"> <i><font color="white">  NOME:<br></font> Yuri Kreuzberg Marcelino<br>
+                            <font color="white">DATA DE NASCIMENTO:</font><br>28/07/2006
+                            <br><font color="white">ENDEREÇO:</font><br>Rua Cacique, 478 Jardim Lancaster
+                            <br><font color="white">CONTATOS:</font><br>telefone - (+55 45) 99836-0548 <br> email - yurikreuzbergmarcelino@gmail.com</i>    
+                            </p>
+                        </font><hr size="10" color="black">
+                            <br><font size="6"><p align="center"><u>DADOS ESSENCIAIS:</u></p></font>
+                                <font size="5" >
+                                    <p align="center">
+                                    <font color="white">ESCOLARIDADE:</font><br>Ensino-Fundamental completo
+                                    <br><font color="white">Ensino-Médio:</font> <br>(Instituto Federal do Paraná)
+                                    <br><font color="white">ESPECIALIZAÇÃO:</font> <br>Técnico de Desenvolvimento de Sistema
+                                    <br> Linguagens - HTML  JavaScript  CSS  Java  Portugol)
+                                    <br><font color="white">CURSOS:</font> <br>Curso de Inglês completo (Wizard)
+                                    </p>
+                                </font>
+                </font>
     </BODY>
 </HMTL>
